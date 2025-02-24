@@ -4,8 +4,10 @@
   "description": "correction de la fiche exercice 3 du module nodeJs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.ts --legacy-watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "start": "npx tsc && node dist/index.js",
+  "build": "tsc",
+  "dev": "nodemon src/index.ts --legacy-watch",
+  "test": "npx jest --config src/jest.config.ts"
   },
   "author": "Victor Dauphin",
   "license": "ISC",
